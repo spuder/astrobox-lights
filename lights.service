@@ -9,6 +9,7 @@ Restart=always
 RestartSec=1
 User=root
 ExecStart=/etc/astrobox-lights/lights.sh
+KillSignal=SIGINT
 
 [Install]
 WantedBy=multi-user.target

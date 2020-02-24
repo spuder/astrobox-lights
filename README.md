@@ -48,6 +48,9 @@ TODO: pipe to bash
 
 ## Troubleshooting
 
+```
+journalctl -u lights -f
+```
 
 ## Resources
 
