@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # https://raspberrypi-aa.github.io/session2/bash.html
 
