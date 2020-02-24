@@ -16,7 +16,8 @@ cd /Volumes/boot
 touch ssh
 ```
 
-You should now be able to ssh into the pi (password is 'raspberry')
+You should now be able to ssh into the pi (password is 'raspberry'). 
+Windows users will need to use a tool like ['putty'](https://www.putty.org/)
 
 ```
 ssh pi@192.168.1.99
@@ -61,6 +62,15 @@ journalctl -u lights
 See `install.sh`
 
 
+### Uninstalling
+
+```
+sudo su -
+service lights stop
+rm -rf /etc/systemd/system/lights.service
+rm -rf /etc/astrobox-lights
+```
+
 ## Troubleshooting
 
 To troubleshoot look at the systemd logs.
@@ -69,6 +79,13 @@ To exit, type `ctrl + c`
 ```
 journalctl -u lights -f
 ```
+
+## Misc
+
+- How many LED's can this mosfet support? 
+
+The more load you put on the mosfet, the hotter it will get. I've succesfully tested 1 meter of LED's pulling 0.4 amps. The mostfet was not hot to the touch. 
+Your results may vary. Use at your own risk
 
 ## Resources
 
