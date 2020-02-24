@@ -46,7 +46,7 @@ Setup a `IRLZ34N` MOSFET and connect it to pin 17 on the raspberry pi (6th pin d
 ```
 ssh pi@<astrobox IP address>
 sudo su -
-curl https://raw.githubusercontent.com/spuder/astrobox-lights/master/install.sh | bash
+curl -s https://raw.githubusercontent.com/spuder/astrobox-lights/master/install.sh | bash
 ```
 
 ### Manual Insatallation
