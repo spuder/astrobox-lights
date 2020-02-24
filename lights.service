@@ -1,0 +1,14 @@
+[Unit]
+Description=Astrobox Lights service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/etc/astrobox-lights/lights.sh
+
+[Install]
+WantedBy=multi-user.target

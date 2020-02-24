@@ -45,6 +45,10 @@ Configure this script to run on a schedule
 
 TODO: pipe to bash
 
+
+## Troubleshooting
+
+
 ## Resources
 
 ![](https://dordnung.de/raspberrypi-ledstrip/)
