@@ -49,12 +49,22 @@ sudo su -
 curl -s https://raw.githubusercontent.com/spuder/astrobox-lights/master/install.sh | bash
 ```
 
+Once installed, check the service is working properly
+
+```
+service lights status
+journalctl -u lights
+```
+
 ### Manual Insatallation
 
 See `install.sh`
 
 
 ## Troubleshooting
+
+To troubleshoot look at the systemd logs.
+To exit, type `ctrl + c`
 
 ```
 journalctl -u lights -f
